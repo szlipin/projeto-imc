@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Calculadora IMC</title>
 </head>
 <body>
 
     <header>
+        <img src="img/logo.png">
+
         <h1>Calculadora de I.M.C</h1>    
     </header>
 
@@ -22,9 +25,11 @@
                 <label for="altura">Altura </label>
                 <input type="text" name="altura" required>
 
-                <input type="submit" value="Enviar">
+                <div class="btn">
+                    <input id="Enviar" type="submit" value="Enviar">
 
-                <input type="reset" value="Limpar">
+                    <input id="Limpar" type="reset" value="Limpar">
+                </div>
             </form>
         </section>
 
@@ -35,8 +40,10 @@
                 <img src="img/Tabela-IMC.jpg">
             </figure>
             
-            <label for="resultado">Resultado: </label>
-            <input type="text" name="resultado">
+            <div class="resultado">
+                <label for="resultado">Resultado </label>
+                <input type="text" name="resultado">
+            </div>
         </aside>
     </main>
 
