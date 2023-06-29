@@ -20,15 +20,15 @@
         <section>
             <form method="post">
                 <label for="peso">Peso </label>
-                <input type="text" name="peso" required>
+                <input type="text" id="peso" name="peso" required>
 
                 <label for="altura">Altura </label>
-                <input type="text" name="altura" required>
+                <input type="text" id="altura" name="altura" required>
 
                 <div class="btn">
-                    <input id="Enviar" type="submit" value="Enviar">
+                    <input id="Enviar" type="button" onclick="IMC()" value="Enviar">
 
-                    <input id="Limpar" type="reset" value="Limpar">
+                    <input id="Limpar" type="reset" onclick="Reset()" value="Limpar">
                 </div>
             </form>
         </section>
@@ -41,8 +41,8 @@
             </figure>
             
             <div class="resultado">
-                <label for="resultado">Resultado </label>
-                <input type="text" name="resultado">
+                <h3>Resultado</h3>
+                <p id="resultado"></p>
             </div>
         </aside>
     </main>
